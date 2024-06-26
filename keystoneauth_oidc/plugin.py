@@ -133,7 +133,7 @@ class OidcAuthorizationCode(oidc._OidcBase):
                  access_token_endpoint=None,
                  authorization_endpoint=None,
                  discovery_endpoint=None,
-                 access_token_type='access_token',
+                 access_token_type='id_token',
                  redirect_host="localhost", redirect_port=8080,
                  **kwargs):
         """The OpenID Authorization Code plugin expects the following.
