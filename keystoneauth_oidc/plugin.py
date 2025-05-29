@@ -135,6 +135,14 @@ class OidcAuthorizationCode(oidc._OidcBase):
                  discovery_endpoint=None,
                  access_token_type='id_token',
                  redirect_host="localhost", redirect_port=8080,
+                 trust_id=None,
+                 system_scope=None,
+                 domain_id=None,
+                 domain_name=None,
+                 project_id=None,
+                 project_domain_id=None,
+                 reauthenticate=None,
+                 include_catalog=None,
                  **kwargs):
         """The OpenID Authorization Code plugin expects the following.
 
@@ -158,6 +166,14 @@ class OidcAuthorizationCode(oidc._OidcBase):
             access_token_endpoint=access_token_endpoint,
             discovery_endpoint=discovery_endpoint,
             access_token_type=access_token_type,
+            trust_id=trust_id,
+            system_scope=system_scope,
+            domain_id=domain_id,
+            domain_name=domain_name,
+            project_id=project_id,
+            project_domain_id=project_domain_id,
+            reauthenticate=reauthenticate,
+            include_catalog=include_catalog,
             **kwargs)
         self.authorization_endpoint = authorization_endpoint
         self.redirect_host = redirect_host
